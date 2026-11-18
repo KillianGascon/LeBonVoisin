@@ -1,0 +1,19 @@
+[project]
+name = "back"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Killian Gascon", email = "killian.gascon@ecoles-epsi.net" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.163.2",
+]
+
+[project.scripts]
+back = "back:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
